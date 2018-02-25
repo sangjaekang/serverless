@@ -131,3 +131,8 @@ resources:
           QueueName: nvmids
           MessageRetentionPeriod: 1209600
           VisibilityTimeout: 60
+plugins:
+  - serverless-python-requirements
+custom:
+  - pythonRequirements:
+      dockerizePip: non-linux
